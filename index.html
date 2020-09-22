@@ -1,0 +1,163 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    
+    <title>Hey I am omara
+        an electrical engneer/ welcame</title>
+</head>
+<body>
+    <header>
+      <div class="container">
+        <div id="branding">
+            <h1><span class="highlight">OMARA</span> POLLYCAP</h1>
+        </div>
+        <nav>
+         <ul>
+            <l1 class="current"><a href="index.html">home</a></l1> 
+            <l1><a href="about.html">about</a></l1> 
+            <l1><a href="services.html">contactss</a></l1> 
+            
+         </ul>   
+        </nav>
+      </div>
+    </header>
+
+    <section id="showcase">
+        <div class="container">
+            <h1>omara Pollycap website</h1>
+            <p>I am Omara Pollycap, persuing a course in electrical engnnering.
+                I love reading,playing rugby, hanging out with friends and making friends
+            </p>
+        </div>
+    </section>
+
+    <section id="newlatter">
+        <div class="container">
+           <h1>subscribe to my news letter</h1>
+           <form>
+            <input type="email" placeholder="Enter Email...">
+            <button type="submit" class="button_1">subscribe</button>
+           </form> 
+        </div>
+    </section>
+    <sections id="boxes">
+        <div class="container">
+            <div class="box">
+                <h3>HTML5 markup</h3>
+            </div>
+            <div class="box">
+                <h3>CSS</h3>
+            </div>
+            <div class="box">
+                <h3>java script</h3>
+            </div>
+            <div class="box">
+                <h3>git hub</h3>
+            </div>
+        </div>
+    </sections>
+    <footer>
+        <p>Omara Pollycap website, copyright &copy; 2020</p>
+    </footer>
+</body>
+</html>
+
+<html>
+  <head>
+    <title>sample</title>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js" type="text/javascript"></script>
+   <style type="text/css">
+     #gallery { 
+ 			display: none;
+			position: absolute;
+			top: 10;
+			left: 30;
+			width: 500px;
+			height: 400px;
+			padding: 16px;
+			border: 2px solid red;
+			background-color: white;
+			z-index:1002;
+			overflow: auto;
+ 
+     }
+     #gallery img { display: block; }
+     #gallery a { padding: 5px 3px 0 0; float: left; display: block; }
+
+     #lightbox { 
+     	display: none;
+			position: absolute;
+			top: 0%;
+			left: 0%;
+			width: 100%;
+			height: 100%;
+			background-color: black;
+			z-index:1001;
+			-moz-opacity: 0.8;
+			opacity:.80;
+			filter: alpha(opacity=80);
+     }
+
+     a#close_link {
+       display: block;
+       float: right;
+       clear:both;
+       background: white;
+       padding: 3px;
+      }
+   <!-- Lightbox code from: -->
+   <!-- http://www.emanueleferonato.com/2007/08/22/create-a-lightbox-effect-only-with-css-no-javascript-needed/-->
+   </style>
+   <script type="text/javascript">
+     $(document).ready(function() {
+       
+      $('#gallery_link').click( function() {
+         $('#lightbox').show();
+         $('#gallery').show();
+      });
+
+
+      $('#close_link').click( function() {
+        $('#lightbox').hide();
+        $('#gallery').hide();   
+      }); 
+
+      $('#gallery a').click( function() {
+        $('#big').attr('src', $(this).attr('data-photo'));      
+      });
+     });
+   </script>
+  </head>
+
+  <body>
+   <div id="lightbox"></div>
+   This is a page where there will be a popup gallery of some images.
+  <br/><br/>
+
+  <a id="gallery_link" href="#">View</a>
+    
+  <br/><br/>
+
+  <div id="gallery">
+    <a href="#" id="close_link">Close</a>
+    <img id="big" height="300" src="photos/image1.jpg">
+    <a href="#" data-photo="photos/image1.jpg"><img src="photos/thumb_image1.jpg" /></a>
+    <a href="#" data-photo="photos/image2.jpg"><img src="photos/thumb_image2.jpg" /></a>
+  </div>
+
+  </body>
+</html>s
+
+<div class="topnav">
+  <a class="active" href="#home">Home</a>
+  <a href="#news">News</a>
+  <a href="#contact">Contact</a>
+  <div class="topnav-right">
+    <a href="#search">Search</a>
+    <a href="#about">About</a>
+  </div>
+</div>
